@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DataTables | Gentelella</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+    <style type="text/css">
+      body { 
+  background: url('img/dark-bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="container body">
+      
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+
+              <ul class="nav navbar-nav navbar-left">
+                <li class="">
+                  <a href="#" class="user-profile dropdown-toggle" aria-expanded="false" data-toggle="modal" data-target="#warning">
+                    <h5>.</h5>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div style="margin:90px 15%;">
+          <div class="">
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>แบบสัมภาษณ์ข้อมูลพื้นฐาน</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content" style="padding: 5px 20px">
+                    
+                  <h4><b>ส่วนที่1: ข้อมูลส่วนบุคคล</b></h4><br>
+                  <div style="padding: 15px 55px">
+                    <div class="col-lg-3 col-md-4 col-sm-6"> 
+                      วันที่สัมภาษณ์
+                      <input type="date" class="form-control" name="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                      สถานที่สัมภาษณ์
+                      <input type="text" class="form-control" name="" placeholder="หมู่ที่">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                      .
+                      <input type="text" class="form-control" name="" placeholder="บ้าน">
+                    </div>
+                    <div class="clearfix"></div><hr>
+
+                    <h5><strong>บุคคลที่ให้ศัมภาษณ์</strong></h5>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" class="flat" checked name="iCheck"> ผู้สูงอายุ
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" class="flat" checked name="iCheck"> ผู้ดูแล
+                        </label>
+                      </div>
+                      <input style="margin-left: 15%;width: 85%" type="text" class="form-control" name="" placeholder="ระบุ">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" class="flat" checked name="iCheck"> อื่นๆ
+                        </label>
+                      </div>
+                      <input style="margin-left: 15%;width: 85%" type="text" class="form-control" name="" placeholder="ระบุ">
+                    </div>
+                    <div class="clearfix"></div><hr>
+
+                    <h5><strong>ผู้สูงอายุ</strong></h5>
+                    <div class="col-lg-3 col-md-4 col-sm-6"> 
+                      ชือ - นามสกุล
+                      <input type="text" class="form-control" name="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                      วัน เดือน ปีเกิด
+                      <input type="date" class="form-control" name="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                      เลขที่บัตรประชาชน
+                      <input type="text" class="form-control" name="">
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="col-lg-6 col-md-8 col-sm-10">
+                      ที่อยู่ตามบัตรประชาชน
+                      <input type="text" class="form-control" name="">
+                    </div>
+                    <div class="clearfix"></div><br>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="col-lg-2">
+                        <h5 style="font-weight: normal">เพศ</h5>
+                      </div>
+                      <div class="col-lg-10">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" class="flat" checked name="gender"> ชาย
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" class="flat" checked name="gender"> หญิง
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-4 col-sm-6">
+                      <div class="col-lg-1">
+                        <h5 style="font-weight: normal">อายุ</h5>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <div class="col-md-10 col-sm-10 col-xs-10">
+                              <input type="number" id="year" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                            ปี
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <div class="col-md-8 col-sm-8 col-xs-9">
+                              <input type="number" id="month" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                            เดือน
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div><hr>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6"> 
+                      <strong>เชื้อชาติ</strong>
+                      <input type="text" class="form-control" name="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                      <strong>สัญชาติ</strong>
+                      <input type="text" class="form-control" name="">
+                    </div>
+                    <div class="clearfix"></div><br>
+
+                    <div class="col-lg-10 col-md-11 col-sm-12">
+                      <div class="col-lg-3">
+                        <h5 style="font-weight: normal">ศาสนา</h5>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="radio" style="padding-right: 0px">
+                              <label>
+                                <input type="radio" class="flat" checked name="reli"> คริสต์
+                              </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" checked name="reli"> พุทธ
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4" style="margin-right: -25px">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" name="reli"> อื่นๆ
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4" style="padding-left: 0px">
+                            <input style="margin-left: 15%;width: 85%" type="text" class="form-control" name="" placeholder="ระบุศาสนา">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div><br>
+
+                    <div class="col-lg-10 col-md-11 col-sm-12">
+                      <div class="col-lg-3">
+                        <h5 style="font-weight: normal">สภาวะสุขภาพของผู้สูงอายุ</h5>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" class="flat" checked name="health"> แข็งแรง
+                              </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-3" style="margin-right: -25px">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" name="health"> มีโรคประจำตัว
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-4" style="padding-left: 0px">
+                            <input style="margin-left: 15%;width: 85%" type="text" class="form-control" name="" placeholder="ระบุโรคประจำตัว">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div><hr>
+
+                    <h5><strong>1.1 Family Profile</strong></h5>
+                    <div style="padding: 15px">
+                      <div class="col-lg-10 col-md-11 col-sm-12">
+                        <div class="col-lg-2">
+                          <h5 style="font-weight: normal">สถานภาพสมรถ</h5>
+                        </div>
+                        <div class="col-lg-10">
+                          <div class="col-lg-3 col-md-3 col-sm-3">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" class="flat" checked name="status"> โสด
+                                </label>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" class="flat" name="status"> คู่
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-3 col-sm-3">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" class="flat" name="status"> หย่า/แยกกันอยู่
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-11 col-sm-12">
+                        <div class="col-lg-2">
+                          
+                        </div>
+                        <div class="col-lg-10">
+                          <div class="col-lg-3 col-md-3 col-sm-3">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" class="flat" checked name="status"> หม้าย
+                                </label>
+                              </div>
+                          </div>
+                          <div class="col-lg-9 col-md-3 col-sm-3">
+                            <div class="col-lg-12">
+                              <div class="form-group">
+                                <p class="col-md-5 col-sm-5 col-xs-12" for="12">สาเหตุการตายของคู่สมรถ 
+                                </p>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input type="text" id="12" required="required" class="form-control col-md-7 col-xs-12">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-group">
+                                <p class="col-md-5 col-sm-5 col-xs-12" for="12">จำนวนปีที่คู่สมรถเสียชีวิต 
+                                </p>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input type="number" id="13" required="required" class="form-control col-md-7 col-xs-12">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div><hr>
+                    </div>
+                    
+                    <br><hr><br>
+                    <a href="home-elder.html"><button type="button" class="btn btn-lg btn-success">บันทึก</button></a>
+                    <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#warning"> ละทิ้ง</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+              
+      </div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="warning" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">คำเตือน</h4>
+        </div>
+        <div class="modal-body">
+          <h4>คุณกำลังออกจากหน้านี้!</h4>
+          <p>ข้อมูลสมาชิกจะถูกละทิ้ง คลิก"ออกจากหน้านี้"เพื่อยืนยันการละทิ้ง หรือ คลิก"อยู่ในหน้านี้"เพื่อดำเนินการเพิ่ทสมาชิกต่อ</p>
+        </div>
+        <div class="modal-footer">
+          <a href="home-list.html"><button type="button" class="btn btn-danger">ออกจากหน้านี้</button></a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">อยู่ในหน้านี้</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--/end Modal -->
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+
+  </body>
+</html>
